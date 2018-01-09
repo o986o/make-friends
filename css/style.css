@@ -1,0 +1,17 @@
+/* parallex */
+.box{
+  position: fixed;
+  top: -200px;
+  left: 0;
+  margin-left: 0px;
+  margin-top: 0px;
+  transition-property: left;
+  transition-duration: 1s;
+}
+/* toggleclass를 사용하면 object에도 transition타임을 설정해 주어야 한다. */
+
+.box.active{
+  left: 50%;
+  transition-property: left;
+  transition-duration: 1s;
+}
