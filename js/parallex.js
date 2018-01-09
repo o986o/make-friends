@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 $(document).on("mousemove", function(){
-    console.log(event.pageY);
+    //console.log(event.pageY);
   $(".box").css({"margin-left" : -125+(event.pageX*0.25)*(-1)});
   $(".box").css({"margin-top" : -125+(event.pageY*0.25)*(-1)});
     });
@@ -14,6 +14,7 @@ $(document).on("mousemove", function(){
         $(".box").removeClass("active");
     }, {offset:"20%"});
 });
+
 
 // addClass는 한 번만 action을 하는 것이다.
 // toggleClass는 acrtion을 계속 반복하는 것이다.

@@ -11,9 +11,8 @@ function preload() {
 
 }
 
-
 function setup(){
-  createCanvas(1400, 700);
+  createCanvas(windowWidth, windowHeight);
   pg = createGraphics(200, 130);
   gif = loadGif('01.gif');
 
@@ -39,16 +38,11 @@ function draw(){
   fill(255);
   ellipse(pgx, pgy, 5, 5);
 
+  if (mouseX<80 && pmouseX>= 80 && mouseY<200) {
+    touched();
+  }
 }
 //기술적인 부분 - 마우스를 클릭하지 않으면 animated는 값을 불러오지 않음.
-function mouseClicked() {
-
-  if (animated) {
-    animated = false;
-    gif.pause();
-  } else {
-    animated = true;
-    gif.play();
-    console.log("play gif");
-  }
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
 }

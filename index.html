@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>!,!make-friends~,~</title>
+    <title></title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
@@ -12,7 +12,6 @@
     <script src="./javascript/p5.gif.js" type="text/javascript"></script>
     <script src="js/parallex.js"></script>
     <script src="sketch.js"></script>
-
 
     <style media="screen">
     body{
@@ -85,8 +84,16 @@
     }
     .davidr{
       position: fixed;
-      top: -20px;
+      top: 67%;
+      left: 2%;
       width: 100px;
+    }
+
+    #davidr{
+      position: fixed;
+      top: -20%;
+      left: -15%;
+      width: 800px;
     }
 
     .line{
@@ -133,17 +140,18 @@
               document.getElementById("demo").innerHTML = "EXPIRED";
           }
       }, 1000);
+
       </script>
 
     <img class="davids" src="resize.gif">
+    <!-- <img id="davidr" src="01.gif"> -->
     <img class="davidr" src="rotate.gif">
+    <img id="davidr" src="02.png">
 
     <img class="line" src="line.png">
-    <img class="caution" src="caution.png">
+    <img class="caution" id="hoverTouch" src="caution.png" onclick="touched()">
     <img class="caution2" src="caution.png">
 
-
-    <!-- <div class="box"><img src="line.png" ></div> -->
 
     </body>
 
